@@ -99,6 +99,12 @@ class Connection:
         """
         return self._conn.ping()
 
+    def ping(self):
+        """
+        Keep the sql server connected
+        """
+        return self._conn.ping()
+
     def query(self, query, args=(), as_dict=False):
         """
         Execute the specified query and return the tuple generator (cursor).
